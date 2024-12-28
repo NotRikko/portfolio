@@ -29,21 +29,23 @@ function Projects() {
             </div>
             {isMobile ? 
                 <div className={Style.project} id={Style.project2} >
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f2826e66444409.5b16b63ad5c69.jpg" /> 
+                <img src="https://i.redd.it/lajibygqo6w71.png" /> 
                     <div className={Style.projectDescription}>
-                        <h3>Umbral</h3>
-                        <p>Made with: <span>React, Fake Store API</span></p>
-                        <p>A mock e-commerce site inspired by high end fashion.</p>
+                        <h3>Holo Error</h3>
+                        <p>Made with: <span>React, Java, Spring Boot, PostgreSQL</span></p>
+                        <p>A Hololive inspired gacha game.</p>
                     </div>
                 </div> 
             : 
                 <div className={Style.project} id={Style.project2} data-aos={isMobile ? null : "fade-left"}>
                 <div className={Style.projectDescription}>
-                    <h3>Umbral</h3>
-                    <p>Made with: <span>React, Fake Store API</span></p>
-                    <p>Mock high end fashion e-commerce site.</p>
+                <div className={Style.projectDescription}>
+                        <h3>Holo Error</h3>
+                        <p>Made with: <span>React, Java, Spring Boot, PostgreSQL</span></p>
+                        <p>A Hololive inspired gacha game.</p>
+                    </div>
                 </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f2826e66444409.5b16b63ad5c69.jpg" /> 
+                <img src="https://preview.redd.it/ffi2po49unb91.png?width=1920&format=png&auto=webp&s=c394a888163f9e51aaaf0616c4548b58cccad12a" /> 
                 </div>
             }
             <div className={Style.project} id={Style.project3} data-aos={isMobile ? null : "fade-right"}>

@@ -7,6 +7,8 @@ import JSIcon from '../assets/js.svg'
 import HTMLIcon from '../assets/html.svg'
 import MongoDBIcon from '../assets/mongodb.svg'
 import NodeIcon from '../assets/node.svg'
+import JavaIcon from '../assets/JavaIcon.svg'
+import SpringBootIcon from '../assets/SpringBootIcon.svg'
 
 
 import AOS from 'aos';
@@ -43,6 +45,8 @@ function About() {
                     <img src={JSIcon}/>
                     <img src={NodeIcon}/>
                     <img src={MongoDBIcon}/>
+                    <img src={JavaIcon}/>
+                    <img src={SpringBootIcon}/>
                 </div>
             </div>
         </div>
