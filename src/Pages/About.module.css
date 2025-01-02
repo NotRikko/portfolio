@@ -1,8 +1,6 @@
 .about {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    padding-left: 10%;
-    padding-right: 10%;
     height: 100vh;
     width: 70%;
     column-gap: none;
