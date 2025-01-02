@@ -1,6 +1,6 @@
 import Style from './Intro.module.css'
 
-function Intro({ scrollToAbout, scrollToProjects, scrollToContact }) {
+function Intro({ scrollToAbout, scrollToProjects }) {
     const handleScrollToAbout = () => {
         scrollToAbout(); 
     };
