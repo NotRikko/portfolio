@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Style from './Pages.module.css'
+import Style from './Projects.module.css'
 import AOS from 'aos';
 
 function Projects() {
@@ -15,6 +15,7 @@ function Projects() {
             window.removeEventListener('resize', handleWindowSizeChange);
         }
     }, []);
+    AOS.init();
     const isMobile = width <= 850;
     return (
         <div id={Style.projects}>
@@ -49,7 +50,7 @@ function Projects() {
                 </div>
             }
             <div className={Style.project} id={Style.project3} data-aos={isMobile ? null : "fade-right"}>
-                <img src="https://cdn.oneesports.gg/cdn-data/2024/03/Anime_Frieren_MainCharacter_Wallpaper2.jpg" /> 
+                <img src="https://vulcanpost.com/wp-content/uploads/2023/04/honkai-star-rail-gameplay-early-review-014.jpg" /> 
                 <div className={Style.projectDescription}>
                     <h3>HSR TFT</h3>
                     <p>Made with: <span>React, Node.js, Express, MongoDB</span></p>

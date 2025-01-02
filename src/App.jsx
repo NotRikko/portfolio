@@ -1,9 +1,8 @@
 import Intro from './Pages/Intro'
 import About from './Pages/About'
 import Projects from './Pages/Projects'
-import Contact from './Pages/Contact'
 import { useRef } from 'react'
-import './App.css'
+import Style from './App.module.css'
 
 function App() {
   const aboutRef = useRef(null);
@@ -12,18 +11,15 @@ function App() {
   return (
     <>
       <Intro 
-        scrollToAbout={() => aboutRef.current.scrollIntoView({ behavior: 'smooth' })}
+        scrollToAbout={() => aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'center'})}
         scrollToProjects={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })}
         scrollToContact={() => contactRef.current.scrollIntoView({behavior: 'smooth'})}
       />
-      <div ref={aboutRef}>
+      <div ref={aboutRef} className={Style.appSection}>
         <About />
       </div>
-      <div ref={projectsRef}>
+      <div ref={projectsRef} className={Style.appSection}>
         <Projects />
-      </div>
-      <div ref={contactRef}>
-          <Contact />
       </div>
     </>
   )
