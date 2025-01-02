@@ -41,19 +41,19 @@ function About() {
                     <div id={Style.profileCardMain}>
                         <div id={Style.profileCardMainStats}>
                             <div>
-                                <h3 style={{ borderBottom: '1px solid black', fontSize: '1.2rem' }}>Pronouns</h3>
+                                <h3>Pronouns</h3>
                                 <h3>he/him</h3>
                             </div>
                             <div>
-                                <h3 style={{ borderBottom: '1px solid black', fontSize: '1.2rem' }}>Birthday</h3>
+                                <h3>Birthday</h3>
                                 <h3>03/06</h3>
                             </div>
                             <div>
-                                <h3 style={{ borderBottom: '1px solid black', fontSize: '1.2rem' }}>Currently</h3>
+                                <h3>Currently</h3>
                                 <h3>Studying</h3>
                             </div>
                         </div>
-                        <p style={{fontSize:"1.2rem", backgroundColor:"rgb(226, 224, 223)", padding:"2.5%", paddingBottom:"3%", boxSizing:"border-box", height: '60%'}}>
+                        <p style={{backgroundColor:"rgb(226, 224, 223)", padding:"2.5%", paddingBottom:"3%", boxSizing:"border-box", height: '60%'}}>
                             Im Rikko, a software engineer who is always striving to learn and improve. 
                             I blend my technical skills with creativity, constantly seeking opportunities to grow and innovate.
                             I also really love anime and reading!

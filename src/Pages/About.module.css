@@ -50,8 +50,13 @@
 #profileCardMainStats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    font-size: 1.1rem;
+    font-size: 1rem;
     column-gap: 5%;
+    
+}
+
+#profileCardMainStats > div > h3:first-of-type {
+    border-bottom: 1px solid black;
 }
 
 #profileCardRecords {
@@ -138,7 +143,6 @@
         justify-content: center;
         padding-left: 10%;
         padding-right: 10%;
-        height: 100%;
     }
 
     #about_main {
@@ -157,8 +161,20 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    .about {
+        height: 100vh;
+    }
+
     #profileCard {
-        font-size: 1rem;
+        height: 80%;
+    }
+    #profileCardMainStats {
+        font-size: 0.8em;
+    }
+    
+    #profileCardRecords {
+        font-size: 0.8em;
     }
     
 }
