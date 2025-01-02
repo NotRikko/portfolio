@@ -54,7 +54,7 @@ function About() {
                         </div>
                     </div>
                     <p style={{backgroundColor:"rgb(226, 224, 223)", padding:"2.5%", paddingBottom:"3%", boxSizing:"border-box", height: '60%'}}>
-                        Im Rikko, a software engineer who is always striving to learn and improve. 
+                        I&apos;m Rikko, a software engineer who is always striving to learn and improve. 
                         I blend my technical skills with creativity, constantly seeking opportunities to grow and innovate.
                         I also really love anime and reading!
                     </p>
