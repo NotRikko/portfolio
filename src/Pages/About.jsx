@@ -60,7 +60,6 @@ function About() {
                     </p>
                 </div>
                 <div id={Style.profileCardRecords}>
-                    <h2>Tech</h2>
                     <img src={JavaIcon}/>
                     <img src={SpringBootIcon}/>
                     <img src={PythonIcon}/>
