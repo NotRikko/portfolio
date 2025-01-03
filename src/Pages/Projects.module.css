@@ -30,7 +30,7 @@
 
 .project img {
     height: 35vh;
-    width: 45vw;
+    width: 39vw;
     max-width: 45%;
     min-width: 300px;
     align-self: center;
@@ -48,6 +48,12 @@
 .projectDescription h3 {
     font-size: 3.2rem;
 
+}
+
+.projectDescription a {
+    font-size: 1.8rem;
+    color:aqua;
+    text-decoration: underline; 
 }
 
 .projectDescription p {

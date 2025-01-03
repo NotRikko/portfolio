@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import Style from './Projects.module.css'
+import vtuberwordleLogo from '../assets/vtuberwordleLogo.png'
+import holoErrorPic from '../assets/holoerrorPic.jpg'
+import portfoliositePic from '../assets/portfoliositePic.png'
 import AOS from 'aos';
 
 function Projects() {
@@ -21,18 +24,20 @@ function Projects() {
         <div id={Style.projects}>
             <h2>Projects</h2>
             <div className={Style.project} id={Style.project1} data-aos={isMobile ? null : "fade-right"}>
-                <img src="https://i.gadgets360cdn.com/large/wordle_website_screenshot_new_1641474361623.jpg" /> 
+                <img src={vtuberwordleLogo} /> 
                 <div className={Style.projectDescription}>
                     <h3>Vordle</h3>
+                    <a href='https://github.com/NotRikko/vtuber-wordle' target='_blank' rel='noopener noreferrer'>Github</a>
                     <p>Made with: <span>React, Node.js, Express, MongoDB</span></p>
                     <p>Vtuber centered wordle game!</p>
                 </div>
             </div>
             {isMobile ? 
                 <div className={Style.project} id={Style.project2} >
-                <img src="https://i.redd.it/lajibygqo6w71.png" /> 
+                <img src={holoErrorPic} /> 
                     <div className={Style.projectDescription}>
                         <h3>Holo Error</h3>
+                        <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>Github</a>
                         <p>Made with: <span>React, Java, Spring Boot, PostgreSQL</span></p>
                         <p>A Hololive inspired gacha game.</p>
                     </div>
@@ -40,21 +45,21 @@ function Projects() {
             : 
                 <div className={Style.project} id={Style.project2} data-aos={isMobile ? null : "fade-left"}>
                 <div className={Style.projectDescription}>
-                <div className={Style.projectDescription}>
                         <h3>Holo Error</h3>
+                        <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>Github</a>
                         <p>Made with: <span>React, Java, Spring Boot, PostgreSQL</span></p>
                         <p>A Hololive inspired gacha game.</p>
-                    </div>
                 </div>
-                <img src="https://preview.redd.it/ffi2po49unb91.png?width=1920&format=png&auto=webp&s=c394a888163f9e51aaaf0616c4548b58cccad12a" /> 
+                <img src={holoErrorPic} /> 
                 </div>
             }
             <div className={Style.project} id={Style.project3} data-aos={isMobile ? null : "fade-right"}>
-                <img src="https://vulcanpost.com/wp-content/uploads/2023/04/honkai-star-rail-gameplay-early-review-014.jpg" /> 
+                <img src={portfoliositePic}/> 
                 <div className={Style.projectDescription}>
-                    <h3>HSR TFT</h3>
+                    <h3>Portfolio Site</h3>
+                    <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>Github</a>
                     <p>Made with: <span>React, Node.js, Express, MongoDB</span></p>
-                    <p>HSR inspired team fight tactics shop.</p>
+                    <p>You are here. Just showing off my works!</p>
                 </div>
             </div>
         </div>

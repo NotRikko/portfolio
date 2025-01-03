@@ -9,8 +9,11 @@ import NodeIcon from '../assets/node.svg'
 import JavaIcon from '../assets/JavaIcon.svg'
 import SpringBootIcon from '../assets/SpringBootIcon.svg'
 import PythonIcon from '../assets/PythonIcon.svg'
-import { GiJusticeStar } from "react-icons/gi";
-import { BsStars } from "react-icons/bs";
+import vtuberwordleLogo from '../assets/vtuberwordleLogo.png'
+import holoErrorPic from '../assets/holoerrorPic.jpg'
+import portfolioSitePic from '../assets/portfoliositePic.png'
+import { GiJusticeStar } from "react-icons/gi"
+import { BsStars } from "react-icons/bs"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -73,6 +76,7 @@ function About() {
                 
             </div>
             <div id={Style.right_about} data-aos={isMobile ? null : "fade-left"}>
+                <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>
                 <div id={Style.right_about_main}>
                     <h2 style={{ marginLeft: '2%', display: 'inline-flex', alignItems: 'center' }}>
                         <span style={{ fontSize: '2.5rem', marginRight: '8px' }}>
@@ -80,9 +84,10 @@ function About() {
                         </span>
                         Star of the Show
                     </h2>
-                    <img src="https://w0.peakpx.com/wallpaper/309/751/HD-wallpaper-nakiri-ayame-in-hololive-nakiri-ayame-anime-girl-anime-artist-artwork-digital-art.jpg"></img>
+                    <img src={holoErrorPic}></img>
                     <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>Holo Error</p>
                 </div>
+                </a>
                 <div id={Style.right_about_sides_container}>
                     <h2 style={{ marginLeft: '2%', display: 'inline-flex', alignItems: 'center' }}>
                         <span style={{ fontSize: '2rem', marginRight: '8px' }}>
@@ -92,16 +97,20 @@ function About() {
                     </h2>
                     <div id={Style.right_about_sides}>
                         <div style={{ position: 'relative' }}>
-                            <img src="https://cdnr.escharts.com/uploads/public/643/fa6/6e0/643fa66e0c010388241358.png"></img>
+                            <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>
+                            <img src={vtuberwordleLogo}></img>
                             <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '8px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>Vordle</p>
+                            </a>
                         </div>
                         <div style={{ position: 'relative' }}>
-                            <img src="https://i.redd.it/90c051twqpo51.jpg"></img>
-                            <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '8px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>Holo Error</p>
+                            <a href='https://github.com/NotRikko/portfolio' target='_blank' rel='noopener noreferrer'>
+                            <img src={portfolioSitePic}></img>
+                            <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '8px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>Portfolio</p>
+                            </a>
                         </div>
                         <div style={{ position: 'relative' }}>
-                            <img src="https://i.redd.it/90c051twqpo51.jpg"></img>
-                            <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '8px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>Holo Error</p>
+                            <img src="https://wallpapers.com/images/hd/loading-1920-x-1080-background-z01s3rej1bgpuk6y.jpg"></img>
+                            <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '8px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>TBA</p>
                         </div>
                     </div>
                 </div>
