@@ -24,7 +24,7 @@ a {
     background-color: rgb(245, 242, 240);
     color: black;
     box-shadow: -25px 0 6px -6px rgba(224, 223, 220, 0.74);
-    border: 1px solid white;
+    border-radius: 15px;
 }
 
 #profileCardHead {
@@ -35,6 +35,8 @@ a {
     background-size: cover;
     color: white;
     font-size: 2rem;
+    border-top-right-radius: 15px;;
+    border-top-left-radius:  15px;;
 }
 
 #profileCardHead img {
@@ -78,13 +80,10 @@ a {
 }
 
 #right_about {
-    background-color: rgb(245, 242, 240);
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 3%;
     padding-bottom: 3%;
-    border: 3px solid black;
-    border-left: 20px solid black;
     min-height: 65%; 
     max-height: 80%;
     display: grid;
@@ -98,8 +97,10 @@ a {
     flex-direction: column;
     position: relative;
     background-color: rgba(20, 13, 12, 0.925);
-    color: rgb(201, 173, 102);
+    color: rgb(255, 255, 255);
     min-height: 45%;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 #right_about_main > h2 {
@@ -116,7 +117,9 @@ a {
     display: flex;
     flex-direction: column;
     background-color: rgba(20, 13, 12, 0.925);
-    color: rgb(201, 173, 102);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 #right_about_sides_container > h2 {
