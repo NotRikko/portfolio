@@ -2,10 +2,7 @@ import Style from './Projects.module.css'
 import vtuberwordleLogo from '../assets/vtuberwordleLogo.png'
 import holoErrorPic from '../assets/holoerrorPic.jpg'
 import portfoliositePic from '../assets/portfoliositePic.png'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import umbralPic from '../assets/umbralPic.jpg'
 
 function Projects() {
     const projects = [
@@ -22,6 +19,13 @@ function Projects() {
             tech: "React, Java, Spring Boot, PostgreSQL",
             description: "A Hololive inspired gacha game.",
             picture: holoErrorPic
+        },
+        {
+            name: "Umbral",
+            link: "https://github.com/NotRikko/odin-shopping-cart",
+            tech: "React",
+            description: "Mock ecommerce website.",
+            picture: umbralPic
         },
         {
             name: "Portfolio",

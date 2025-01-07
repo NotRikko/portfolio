@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 3%;
     align-items: center;
     color: white;
 }
@@ -17,7 +18,7 @@
 #container {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     row-gap: 3%;
 }
 
@@ -26,7 +27,7 @@
     flex-direction: column;
     width: 85%;
     padding: 5%;
-    background-color: rgba(26, 25, 27, 0.808);
+    background-color: rgba(22, 21, 27, 0.808);
     border-radius: 20px;
 }
 
@@ -41,17 +42,14 @@
 .projectCard img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    #container {
-        grid-template-columns: 1fr 1fr;
-    }
+@media screen and (max-width: 1500px) {
     #projects {
         height: 100%;
-        padding-bottom: 5vh;
+        padding-bottom: 8vh;
     }
-
 }
 
 @media screen and (max-width: 450px) {
