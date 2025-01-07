@@ -47,6 +47,10 @@
     #container {
         grid-template-columns: 1fr 1fr;
     }
+    #projects {
+        height: 100%;
+        padding-bottom: 5vh;
+    }
 
 }
 
