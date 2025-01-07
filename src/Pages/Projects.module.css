@@ -45,6 +45,10 @@
     border-radius: 20px;
 }
 
+.projectCard a {
+    color: rgb(141, 233, 228);
+}
+
 @media screen and (max-width: 1500px) {
     #projects {
         height: 100%;

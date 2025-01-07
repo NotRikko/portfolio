@@ -48,6 +48,7 @@ function Projects() {
                     <img src={project.picture}/>
                     <h2>{project.name}</h2>
                     <h3>{project.tech}</h3>
+                    <a href ={project.link} target="_blank" rel="noopener">Github</a>
                     <p>{project.description}</p>
                 </div>
             ))}
