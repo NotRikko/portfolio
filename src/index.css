@@ -3,7 +3,7 @@ body {
 }
 
 #root {
-  background: linear-gradient(to right, #3d4455,#2c344b);
+  background: linear-gradient(to right, #360033, #263b53);
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;

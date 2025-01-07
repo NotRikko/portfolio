@@ -48,8 +48,8 @@ function About() {
                             <h3>he/him</h3>
                         </div>
                         <div>
-                            <h3>Birthday</h3>
-                            <h3>03/06</h3>
+                            <h3>Location</h3>
+                            <h3>LA, CA</h3>
                         </div>
                         <div>
                             <h3>Currently</h3>

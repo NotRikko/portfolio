@@ -1,66 +1,52 @@
-import { useState, useEffect } from 'react'
 import Style from './Projects.module.css'
 import vtuberwordleLogo from '../assets/vtuberwordleLogo.png'
 import holoErrorPic from '../assets/holoerrorPic.jpg'
 import portfoliositePic from '../assets/portfoliositePic.png'
-import AOS from 'aos';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 function Projects() {
-    const [width, setWidth] = useState(window.innerWidth);
-
-    const handleWindowSizeChange = () => {
-        setWidth(window.innerWidth)
-    };
-
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
-    }, []);
-    AOS.init();
-    const isMobile = width <= 850;
+    const projects = [
+        {   
+            name: "Vordle",
+            link: "https://github.com/NotRikko/vtuber-wordle",
+            tech: "React, Node.js, Express, MongoDB",
+            description: "Vtuber centered wordle game",
+            picture: vtuberwordleLogo
+        },
+        {
+            name: "Holo Error",
+            link: "https://github.com/NotRikko/hololive_gacha",
+            tech: "React, Java, Spring Boot, PostgreSQL",
+            description: "A Hololive inspired gacha game.",
+            picture: holoErrorPic
+        },
+        {
+            name: "Portfolio",
+            link: "https://github.com/NotRikko/hololive_gacha",
+            tech: "React",
+            description: "You are here. Just showing off my works",
+            picture: portfoliositePic
+        },
+    ]
+    
     return (
         <div id={Style.projects}>
-            <h2>Projects</h2>
-            <div className={Style.project} id={Style.project1} data-aos={isMobile ? null : "fade-right"}>
-                <img src={vtuberwordleLogo} /> 
-                <div className={Style.projectDescription}>
-                    <h3>Vordle</h3>
-                    <a href='https://github.com/NotRikko/vtuber-wordle' target='_blank' rel='noopener noreferrer'>Github</a>
-                    <p>Made with: <span>React, Node.js, Express, MongoDB</span></p>
-                    <p>Vtuber centered wordle game!</p>
+            <h1>Projects</h1>
+            <div id={Style.container}>
+            {projects.map((project, index) => (
+                <div
+                    key={index}
+                    className={Style.projectCard}
+                >
+                    <img src={project.picture}/>
+                    <h2>{project.name}</h2>
+                    <h3>{project.tech}</h3>
+                    <p>{project.description}</p>
                 </div>
-            </div>
-            {isMobile ? 
-                <div className={Style.project} id={Style.project2} >
-                <img src={holoErrorPic} /> 
-                    <div className={Style.projectDescription}>
-                        <h3>Holo Error</h3>
-                        <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>Github</a>
-                        <p>Made with: <span>React, Java, Spring Boot, PostgreSQL</span></p>
-                        <p>A Hololive inspired gacha game.</p>
-                    </div>
-                </div> 
-            : 
-                <div className={Style.project} id={Style.project2} data-aos={isMobile ? null : "fade-left"}>
-                <div className={Style.projectDescription}>
-                        <h3>Holo Error</h3>
-                        <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>Github</a>
-                        <p>Made with: <span>React, Java, Spring Boot, PostgreSQL</span></p>
-                        <p>A Hololive inspired gacha game.</p>
-                </div>
-                <img src={holoErrorPic} /> 
-                </div>
-            }
-            <div className={Style.project} id={Style.project3} data-aos={isMobile ? null : "fade-right"}>
-                <img src={portfoliositePic}/> 
-                <div className={Style.projectDescription}>
-                    <h3>Portfolio Site</h3>
-                    <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>Github</a>
-                    <p>Made with: <span>React, Node.js, Express, MongoDB</span></p>
-                    <p>You are here. Just showing off my works!</p>
-                </div>
+            ))}
             </div>
         </div>
     )
