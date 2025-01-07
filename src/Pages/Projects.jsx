@@ -49,9 +49,11 @@ function Projects() {
                     className={Style.projectCard}
                 >
                     <img src={project.picture} alt={project.name} />
-                    <h2>{project.name}</h2>
-                    <h3>{project.tech}</h3>
-                    <p>{project.description}</p>
+                    <div className={Style.projectData}>
+                        <h2>{project.name}</h2>
+                        <h3>{project.tech}</h3>
+                        <p>{project.description}</p>
+                    </div>
                 </a>
             ))}
             </div>
