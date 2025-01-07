@@ -41,16 +41,18 @@ function Projects() {
             <h1>Projects</h1>
             <div id={Style.container}>
             {projects.map((project, index) => (
-                <div
+                <a
                     key={index}
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener"
                     className={Style.projectCard}
                 >
-                    <img src={project.picture}/>
+                    <img src={project.picture} alt={project.name} />
                     <h2>{project.name}</h2>
                     <h3>{project.tech}</h3>
-                    <a href ={project.link} target="_blank" rel="noopener">Github</a>
                     <p>{project.description}</p>
-                </div>
+                </a>
             ))}
             </div>
         </div>
