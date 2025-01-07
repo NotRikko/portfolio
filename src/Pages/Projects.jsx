@@ -9,29 +9,29 @@ function Projects() {
         {   
             name: "Vordle",
             link: "https://github.com/NotRikko/vtuber-wordle",
-            tech: "React, Node.js, Express, MongoDB",
+            tech: ['React', 'Node.js', 'Express', 'MongoDB'],
             description: "Vtuber centered wordle game",
             picture: vtuberwordleLogo
         },
         {
             name: "Holo Error",
             link: "https://github.com/NotRikko/hololive_gacha",
-            tech: "React, Java, Spring Boot, PostgreSQL",
+            tech: ['React', 'Java', 'Spring Boot', 'PostgreSQL'],
             description: "A Hololive inspired gacha game.",
             picture: holoErrorPic
         },
         {
             name: "Umbral",
             link: "https://github.com/NotRikko/odin-shopping-cart",
-            tech: "React",
+            tech: ['React'],
             description: "Mock ecommerce website.",
             picture: umbralPic
         },
         {
             name: "Portfolio",
             link: "https://github.com/NotRikko/hololive_gacha",
-            tech: "React",
-            description: "You are here. Just showing off my works",
+            tech: ['React'],
+            description: "You are here.",
             picture: portfoliositePic
         },
     ]
@@ -51,8 +51,13 @@ function Projects() {
                     <img src={project.picture} alt={project.name} />
                     <div className={Style.projectData}>
                         <h2>{project.name}</h2>
-                        <h3>{project.tech}</h3>
                         <p>{project.description}</p>
+                        <h3>{project.tech.map((tech, index) => (
+                            <span key={index}>
+                                {tech}
+                            </span>
+                        ))}
+                        </h3>
                     </div>
                 </a>
             ))}
