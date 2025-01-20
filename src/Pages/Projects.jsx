@@ -1,15 +1,23 @@
 import Style from './Projects.module.css'
 import vtuberwordleLogo from '../assets/vtuberwordleLogo.png'
 import holoErrorPic from '../assets/holoerrorPic.jpg'
-import portfoliositePic from '../assets/portfoliositePic.png'
+import portfoliositePic from '../assets/portfolioSitePic.png'
 import umbralPic from '../assets/umbralPic.jpg'
+import yugenProjectPic from '../assets/yugenProjectPic.png'
 
 function Projects() {
     const projects = [
         {   
+            name: "Yugen",
+            link: "https://github.com/NotRikko/vtuber-wordle",
+            tech: ['Typescript', 'React', 'Spring Boot', 'Java', 'PostgreSQL'],
+            description: "Social Media/E-commerce hybrid",
+            picture: yugenProjectPic
+        },
+        {   
             name: "Vordle",
             link: "https://github.com/NotRikko/vtuber-wordle",
-            tech: ['React', 'Node.js', 'Express', 'MongoDB'],
+            tech: ['Javascript', 'React', 'Node.js', 'Express', 'MongoDB'],
             description: "Vtuber centered wordle game",
             picture: vtuberwordleLogo
         },
@@ -23,14 +31,14 @@ function Projects() {
         {
             name: "Umbral",
             link: "https://github.com/NotRikko/odin-shopping-cart",
-            tech: ['React'],
+            tech: ['Javascript', 'React'],
             description: "Mock ecommerce website.",
             picture: umbralPic
         },
         {
             name: "Portfolio",
             link: "https://github.com/NotRikko/hololive_gacha",
-            tech: ['React'],
+            tech: ['Javascript', 'React'],
             description: "You are here.",
             picture: portfoliositePic
         },

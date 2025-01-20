@@ -11,7 +11,8 @@ import SpringBootIcon from '../assets/SpringBootIcon.svg'
 import PythonIcon from '../assets/PythonIcon.svg'
 import vtuberwordleLogo from '../assets/vtuberwordleLogo.png'
 import holoErrorPic from '../assets/holoerrorPic.jpg'
-import portfolioSitePic from '../assets/portfoliositePic.png'
+import portfolioSitePic from '../assets/portfolioSitePic.png'
+import yugenProjectPic from '../assets/yugenProjectPic.png'
 import { GiJusticeStar } from "react-icons/gi"
 import { BsStars } from "react-icons/bs"
 
@@ -20,6 +21,32 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 function About() {
+    const [starProject, setStarProject] = useState({
+        title: 'Yugen',
+        image: yugenProjectPic,
+        link: 'https://github.com/NotRikko/yugen'
+    })
+    const [projects, setProjects] = useState([
+        {
+            id: 1,
+            title: 'Holo Error',
+            image: holoErrorPic, 
+            link: 'https://github.com/NotRikko/hololive_gacha',
+        },
+        {
+            id: 2,
+            title: 'Vordle',
+            image: vtuberwordleLogo, 
+            link: 'https://github.com/NotRikko/hololive_gacha'
+        },
+        {
+            id: 3,
+            title: 'Portfolio',
+            image:  portfolioSitePic, 
+            link: 'https://github.com/NotRikko/portfolio'
+        },
+    ]);
+
     const [width, setWidth] = useState(window.innerWidth);
 
     const handleWindowSizeChange = () => {
@@ -76,7 +103,7 @@ function About() {
                 
             </div>
             <div id={Style.right_about} data-aos={isMobile ? null : "fade-left"}>
-                <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>
+                <a href={starProject.link} target='_blank' rel='noopener noreferrer'>
                 <div id={Style.right_about_main}>
                     <h2 style={{ marginLeft: '2%', display: 'inline-flex', alignItems: 'center' }}>
                         <span style={{ fontSize: '2.5rem', marginRight: '8px' }}>
@@ -84,8 +111,8 @@ function About() {
                         </span>
                         Star of the Show
                     </h2>
-                    <img src={holoErrorPic}></img>
-                    <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>Holo Error</p>
+                    <img src={starProject.image}></img>
+                    <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>{starProject.title}</p>
                 </div>
                 </a>
                 <div id={Style.right_about_sides_container}>
@@ -96,22 +123,28 @@ function About() {
                         Star Faring Companions
                     </h2>
                     <div id={Style.right_about_sides}>
-                        <div style={{ position: 'relative' }}>
-                            <a href='https://github.com/NotRikko/hololive_gacha' target='_blank' rel='noopener noreferrer'>
-                            <img src={vtuberwordleLogo}></img>
-                            <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '8px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>Vordle</p>
-                            </a>
-                        </div>
-                        <div style={{ position: 'relative' }}>
-                            <a href='https://github.com/NotRikko/portfolio' target='_blank' rel='noopener noreferrer'>
-                            <img src={portfolioSitePic}></img>
-                            <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '8px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>Portfolio</p>
-                            </a>
-                        </div>
-                        <div style={{ position: 'relative' }}>
-                            <img src="https://wallpapers.com/images/hd/loading-1920-x-1080-background-z01s3rej1bgpuk6y.jpg"></img>
-                            <p style={{ position: 'absolute', bottom: '0', left: '0', right: '0', margin: '0', padding: '8px', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', textAlign: 'center' }}>TBA</p>
-                        </div>
+                        {projects.map((project) => (
+                            <div key={project.id} style={{ position: 'relative' }}>
+                                <a href={project.link} target='_blank' rel='noopener noreferrer'>
+                                    <img src={project.image} alt={project.title}></img>
+                                    <p
+                                        style={{
+                                            position: 'absolute',
+                                            bottom: '0',
+                                            left: '0',
+                                            right: '0',
+                                            margin: '0',
+                                            padding: '8px',
+                                            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                                            color: 'white',
+                                            textAlign: 'center',
+                                        }}
+                                    >
+                                        {project.title}
+                                    </p>
+                                </a>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
