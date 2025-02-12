@@ -9,9 +9,9 @@ function Projects() {
     const projects = [
         {   
             name: "Yugen",
-            link: "https://github.com/NotRikko/vtuber-wordle",
+            link: "https://github.com/NotRikko/yugen",
             tech: ['Typescript', 'React', 'Spring Boot', 'Java', 'PostgreSQL'],
-            description: "Social Media/E-commerce hybrid",
+            description: "Social Media/Marketplace hybrid",
             picture: yugenProjectPic
         },
         {   
